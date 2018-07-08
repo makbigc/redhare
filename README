@@ -1,0 +1,29 @@
+Description
+===========
+Redhare is a command-like tool to capture the result table
+from the Hong Kong Jockey Club website.
+http://racing.hkjc.com/racing/Info/meeting/Results/english/Local/
+
+
+Installation
+============
+First set up the virtualenv
+$ pipenv install
+
+Then run the setup.py
+$ python setup.py develop
+
+Usage
+=====
+Usage: redhare [OPTIONS]
+A command tool to capture the result table from Hong Kong Jockey Club
+
+Options:
+--date TEXT      Date of match. Format:YYYYMMDD
+--venue [ST|HV]  Venue: ST or HV
+--table TEXT
+--help           Show this message and exit.
+
+Example
+=======
+$redhare --date='20170910' --venue='ST'
